@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import {RouterConfig} from './navigation/RouterConfig'
+import {BrowserRouter, NavLink, Route, Router} from 'react-router-dom'
+import {NavLinks} from './navigation/NavLinks'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -15,9 +18,14 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React Faster.
         </a>
-      </header>
+        
+      </header> */}   
+         
+      <BrowserRouter>
+      <RouterConfig/>     
+      </BrowserRouter>
     </div>
   );
 }
