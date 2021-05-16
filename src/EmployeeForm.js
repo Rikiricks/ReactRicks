@@ -23,8 +23,7 @@ class EmployeeForm extends React.Component{
     }
 
     changeHandler = e => {
-        const name = e.target.name;
-        const value = e.target.value;
+       const {name, value} = e.target;
 
         this.setState({
            employee:{...this.state.employee, [name]:value}     
