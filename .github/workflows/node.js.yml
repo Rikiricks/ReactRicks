@@ -1,13 +1,14 @@
-name: CI / CD
+name: CI/CD
 
-to:
-  Push:
-    branches: [master]
+on:
+  push:
+    branches: [ master ]
   pull_request:
-    branches: [master]
+    branches: [ master ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     strategy:
